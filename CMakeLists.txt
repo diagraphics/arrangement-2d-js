@@ -24,9 +24,9 @@ set(TS_DEF_UMD_FILE ${MODULE_NAME}.umd.d.ts)
 
 # Include cgal and boost headers
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/libraries/CGAL-5.4/include)
-include_directories(${CMAKE_CURRENT_SOURCE_DIR}/libraries/boost_1_79_0)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/libraries/boost_1_81_0)
 set(CGAL_INCLUDE ${CMAKE_CURRENT_SOURCE_DIR}/libraries/CGAL-5.4/include)
-set(BOOST_INCLUDE ${CMAKE_CURRENT_SOURCE_DIR}/libraries/boost_1_79_0)
+set(BOOST_INCLUDE ${CMAKE_CURRENT_SOURCE_DIR}/libraries/boost_1_81_0)
 
 # Get the source files
 file(GLOB_RECURSE CPP_FILES src/*.cpp)
