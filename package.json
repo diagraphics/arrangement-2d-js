@@ -8,9 +8,12 @@
     "email": "ax.antoine@gmail.com",
     "url": "https://axantoine.com"
   },
-  "main": "build/Arrangement2D.umd.js",
-  "module": "build/Arrangement2D.esm.js",
-  "types": "build/Arrangement2D.esm.d.ts",
+  "exports": {
+    ".": {
+      "types": "./build/Arrangement2D.d.ts",
+      "import": "./build/Arrangement2D.js"
+    }
+  },
   "scripts": {
     "clean": "rm -rf build build-examples",
     "build": "emcmake cmake -B build && emmake make -C build",
