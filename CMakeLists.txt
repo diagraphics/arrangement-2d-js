@@ -82,7 +82,8 @@ set_target_properties(esm
       -s SINGLE_FILE=1 \
       -s USE_ES6_IMPORT_META=1 \
       -s ALLOW_MEMORY_GROWTH=1 \
-      -s ASSERTIONS \
+      -s ASSERTIONS=2 \
+      -s STACK_SIZE=1048576 \
       -s NO_EXIT_RUNTIME=1 \
       -s NO_FILESYSTEM=1 \
       -s EXPORT_NAME=${MODULE_NAME} \
