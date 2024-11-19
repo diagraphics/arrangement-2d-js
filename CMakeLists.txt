@@ -19,7 +19,7 @@ set(WEBIDL_BINDER ${EMSCRIPTEN_ROOT}/tools/webidl_binder.py)
 set(WEBIDL_INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}/src/arrangement2d.idl)
 set(WEBIDL_HEADER ${CMAKE_CURRENT_SOURCE_DIR}/src/arrangement2d.h)
 set(MODULE_NAME Arrangement2D)
-set(TS_DEF_MOD_FILE ${MODULE_NAME}.d.ts)
+set(TS_DEF_MOD_FILE ../dist/${MODULE_NAME}.d.ts)
 
 # Include cgal and boost headers
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/libraries/CGAL-5.4/include)
@@ -73,7 +73,7 @@ set_target_properties(esm
     ADDITIONAL_CLEAN_FILES "wrapper.cpp;glue.cpp;glue.js;${MODULE_NAME}.wasm"
     OUTPUT_NAME ${MODULE_NAME}
     SUFFIX ".js"
-    RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}
+    RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/../dist
     CFLAGS "-O3"
     LINK_FLAGS "\
       -s WASM=1 \

@@ -10,8 +10,8 @@
   },
   "exports": {
     ".": {
-      "types": "./build/Arrangement2D.d.ts",
-      "import": "./build/Arrangement2D.js"
+      "types": "./dist/Arrangement2D.d.ts",
+      "import": "./dist/Arrangement2D.js"
     }
   },
   "scripts": {
